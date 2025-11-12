@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-11 16:40:48.715497",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "increment_date",
+  "special_increment",
+  "validate_increment",
+  "date_of_special_increment",
+  "increment_month",
+  "reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "increment_date",
+   "fieldtype": "Date",
+   "label": "Increment Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "special_increment",
+   "fieldtype": "Check",
+   "label": "Special Increment"
+  },
+  {
+   "fieldname": "increment_month",
+   "fieldtype": "Select",
+   "label": "Increment Month",
+   "options": "\n1\n7"
+  },
+  {
+   "default": "0",
+   "fieldname": "validate_increment",
+   "fieldtype": "Check",
+   "label": "Validate Increment"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "date_of_special_increment",
+   "fieldtype": "Date",
+   "label": "Date of Special Increment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-11 16:43:29.500704",
+ "modified_by": "Administrator",
+ "module": "Batman",
+ "name": "Increment Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

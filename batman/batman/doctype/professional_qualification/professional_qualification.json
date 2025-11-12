@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:professional_qualification",
+ "creation": "2025-11-12 10:19:33.093210",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "professional_qualification"
+ ],
+ "fields": [
+  {
+   "fieldname": "professional_qualification",
+   "fieldtype": "Data",
+   "label": "Professional Qualification",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-12 10:19:53.727672",
+ "modified_by": "Administrator",
+ "module": "Batman",
+ "name": "Professional Qualification",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

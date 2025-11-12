@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-07 10:18:48.095994",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "period_from",
+  "period_to",
+  "basic_salary_percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "period_from",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Period From"
+  },
+  {
+   "fieldname": "period_to",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Period To"
+  },
+  {
+   "fieldname": "basic_salary_percentage",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Basic Salary Percentage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-07 10:29:34.612583",
+ "modified_by": "Administrator",
+ "module": "Batman",
+ "name": "Employee Suspension Period",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

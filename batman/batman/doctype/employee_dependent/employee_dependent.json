@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-06 15:19:34.500254",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dependent_name",
+  "dependent_code",
+  "relation",
+  "gender",
+  "date_of_birth",
+  "pf_distribution",
+  "handicapped",
+  "pf_nominee",
+  "address"
+ ],
+ "fields": [
+  {
+   "fetch_from": "dependent_code.employee_name",
+   "fieldname": "dependent_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dependent Name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Of Birth"
+  },
+  {
+   "default": "0",
+   "fieldname": "handicapped",
+   "fieldtype": "Check",
+   "label": "Handicapped"
+  },
+  {
+   "default": "0",
+   "fieldname": "pf_nominee",
+   "fieldtype": "Check",
+   "label": "Pf Nominee"
+  },
+  {
+   "fieldname": "pf_distribution",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "PF Distribution %"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "dependent_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dependent Code"
+  },
+  {
+   "fieldname": "relation",
+   "fieldtype": "Data",
+   "label": "Relation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-06 17:27:19.168974",
+ "modified_by": "Administrator",
+ "module": "Batman",
+ "name": "Employee Dependent",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

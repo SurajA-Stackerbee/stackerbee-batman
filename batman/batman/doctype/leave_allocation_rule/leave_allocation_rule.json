@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:LAR-{employee_type}-{leave_type}-{days}",
+ "creation": "2025-11-08 12:32:01.254314",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_type",
+  "leave_type",
+  "applicability_condition",
+  "days",
+  "minimum_service_days",
+  "contract_period"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee Type",
+   "options": "Employment Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Leave Type",
+   "options": "Leave Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "days",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "New Allocation Days",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.applicability_condition == \"Contract Period\"",
+   "fieldname": "contract_period",
+   "fieldtype": "Data",
+   "label": "Contract Period (Months)"
+  },
+  {
+   "fieldname": "applicability_condition",
+   "fieldtype": "Select",
+   "label": "Applicability Condition",
+   "options": "\nFirst Half (Jan\u2013Jun)\nSecond Half (Jul\u2013Dec)\nAfter 1 Year of Service\nContract Period",
+   "reqd": 1
+  },
+  {
+   "fieldname": "minimum_service_days",
+   "fieldtype": "Int",
+   "label": "Minimum Service Days"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-10 15:46:38.368673",
+ "modified_by": "Administrator",
+ "module": "Batman",
+ "name": "Leave Allocation Rule",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

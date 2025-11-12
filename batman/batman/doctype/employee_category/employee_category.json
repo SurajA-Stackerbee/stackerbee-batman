@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:employee_category_name",
+ "creation": "2025-11-06 12:47:59.792614",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "emp_cat_code",
+  "column_break_bofp",
+  "employee_category_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "emp_cat_code",
+   "fieldtype": "Data",
+   "label": "Employee Category Code"
+  },
+  {
+   "fieldname": "column_break_bofp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_category_name",
+   "fieldtype": "Data",
+   "label": "Employee Category Name",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-06 15:06:59.282867",
+ "modified_by": "Administrator",
+ "module": "Batman",
+ "name": "Employee Category",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-11-06 13:06:57.875437",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_type_code",
+  "employee_type_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_type_code",
+   "fieldtype": "Data",
+   "label": "Employee Type Code"
+  },
+  {
+   "fieldname": "employee_type_name",
+   "fieldtype": "Data",
+   "label": "Employee Type Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-06 14:36:28.313987",
+ "modified_by": "Administrator",
+ "module": "Batman",
+ "name": "Employee Type",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
